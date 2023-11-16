@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Speedometer</title>
+  <meta name="description" content="Simple speedometer progressive web app based on Geolocation API.">
+  <meta name="theme-color" content="#f1f1f1">
+  <!-- <link rel="icon" href="/images/speedometer.png"> -->
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <div class="readout">
+    <h1>In Vehicle Speed Warning System for Curve Roads</h1>
+    <p>Your current location is:</p>
+    <p id="location">Fetching...</p>
+</div>
+
+  <div id="readout">
+    <h2>Speed Information</h2>
+        <p>Your Current Speed is:</p>
+        <p id="currentspeed">0 km/h</p>
+        <p>Safe Speed is:</p>
+        <p id="safespeed">N/A</p>
+        <p>Design Speed is:</p>
+        <p id="designspeed">N/A</p>
+  </div>
+
+  <div class="readout">
+    <h2>Curvature Information</h2>
+    <p>Radius of Curvature is:</p>
+    <p id="radius">N/A</p>
+</div>
+
+<div>
+  <p id="warning"></p>
+</div>
+
+
+ 
+    <button id="start">🔑 Start</button>
+  <script src="index.js"></script>
+</body>
+</html>
